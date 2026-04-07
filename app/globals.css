@@ -7,9 +7,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-montserrat: var(--font-montserrat);
+  --font-roboto: var(--font-roboto);
+  --font-heading: var(--font-montserrat);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -55,9 +55,9 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(58.667% 0.22427 26.571);
+  --secondary: oklch(32.706% 0.14403 293.909);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -90,9 +90,9 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
+  --primary: oklch(58.667% 0.22427 26.571);
+  --secondary: oklch(32.706% 0.14403 293.909);
   --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
@@ -121,10 +121,62 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-synthesis: none;
   }
+
   html {
     @apply font-sans;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold
+  }
+
+  p, span, li {
+    @apply font-roboto font-normal text-sm
+  }
+
+  button {
+    @apply hover:cursor-pointer
+  }
+
+}
+
+@layer utilities {
+
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hero-trapezoid {
+    clip-path: polygon(0 0, 55% 0, 100% 100%, 0 100%);
+  }
+
+  @media(min-width: 768px) {
+    .hero-trapezoid {
+      clip-path: polygon(0 0, 65% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @media(min-width: 1024px) {
+    .hero-trapezoid {
+      /* background: oklch(58.658% 0.22436 26.765 / 0.78); */
+      clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+    }
+  }
+
 }
