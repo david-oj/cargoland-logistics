@@ -35,6 +35,8 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -56,6 +58,8 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(58.667% 0.22427 26.571);
+  --primary-dark: oklch(40.451% 0.15056 26.001);
+  --primary-light: oklch(94.918% 0.02071 17.238);
   --secondary: oklch(32.706% 0.14403 293.909);
   --primary-foreground: oklch(0.985 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -91,6 +95,8 @@
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(58.667% 0.22427 26.571);
+  --primary-dark: oklch(40.451% 0.15056 26.001);
+  --primary-light: oklch(94.918% 0.02071 17.238);
   --secondary: oklch(32.706% 0.14403 293.909);
   --primary-foreground: oklch(0.205 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -160,6 +166,10 @@
   .hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .padding-x {
+    @apply px-4 sm:px-14 lg:px-28
   }
 
   .hero-trapezoid {

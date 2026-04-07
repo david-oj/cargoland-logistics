@@ -4,7 +4,7 @@ import { arrowDown2, mail, worldFIlled } from "@/assets/icons";
 
 const ContactHeading = () => {
   return (
-    <section className="bg-secondary text-white py-1 md:py-3 px-6 sm:px-14 lg:px-28">
+    <section className="bg-secondary text-white py-1 md:py-3 padding-x">
       <div className="flex justify-between items-center">
         <div className="flex gap-10.5">
           <div className="flex">

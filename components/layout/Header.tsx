@@ -14,7 +14,7 @@ import {
 
 const Header = () => {
   return (
-    <header className="py-2 md:py-4 px-6 sm:px-14 lg:px-28 bg-white flex items-center justify-between">
+    <header className="py-2 md:py-4 padding-x bg-white flex items-center justify-between">
       <div className="relative w-28 md:w-35.25 h-10 md:h-12 shrink-0">
         <Image
           src={cargolandLogo.src}
