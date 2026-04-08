@@ -37,7 +37,7 @@ const Services = () => {
             Our Service Overview
           </p>
         </div>
-        <h2 className="text-2xl md:text-[40px] mt-2 md:mt-4 font-semibold leading-12 text-center">
+        <h2 className="sub-heading mt-2 md:mt-4 font-semibold leading-12 text-center">
           Services that we Offer
         </h2>
         <p className="text-base leading-6 max-w-[682px] mt-1 md:mt-3 text-center text-neutral-700">

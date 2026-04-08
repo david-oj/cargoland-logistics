@@ -172,6 +172,10 @@
     @apply px-4 sm:px-14 lg:px-28
   }
 
+  .sub-heading {
+    @apply text-2xl md:text-[40px] font-semibold md:leading-12
+  }
+
   .hero-trapezoid {
     clip-path: polygon(0 0, 55% 0, 100% 100%, 0 100%);
   }
