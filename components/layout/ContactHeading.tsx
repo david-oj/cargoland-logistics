@@ -6,7 +6,7 @@ const ContactHeading = () => {
   return (
     <section className="bg-secondary text-white py-1 md:py-3 padding-x">
       <div className="flex justify-between items-center">
-        <div className="flex gap-10.5">
+        <div className="flex max-md:flex-col gap-px md:gap-10.5">
           <div className="flex">
             <Icon icon={mail} className="size-4 mr-px" />
             <p className="text-xs font-medium leading-4.5">

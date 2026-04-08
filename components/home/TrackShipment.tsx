@@ -14,16 +14,16 @@ const TrackShipment = () => {
             delivery.
           </p>
 
-          <div className="relative w-full md:max-w-[462px] h-14 mt-6 rounded-lg">
+          <div className="relative w-full md:max-w-[462px] h-12 sm:h-14 mt-6 rounded-lg">
             <input
               type="text"
               placeholder="Enter your tracking number"
-              className="w-full h-full py-4 px-6 pr-30 bg-neutral-100 placeholder:text-neutral-500 rounded-lg"
+              className="w-full h-full py-4 px-6 pr-30 bg-neutral-100 text-black placeholder:text-neutral-500 rounded-lg"
             />
-            <Button className="absolute top-1/2 transform -translate-y-1/2 right-1 gap-2 w-[106px] h-[calc(100%-8px)]">
+            <button className="absolute top-1/2 transform -translate-y-1/2 right-1 active:scale-95 transition duration-300 bg-primary rounded-lg text-white flex items-center justify-center gap-2 w-[106px] h-[calc(100%-8px)]">
               <span className="text-base leaing-6">Track</span>
               <ArrowRight className="size-4.5" />
-            </Button>
+            </button>
           </div>
         </div>
 
