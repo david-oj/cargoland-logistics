@@ -4,8 +4,8 @@ import Image from "next/image";
 const DiscoverLogistics = () => {
   return (
     <section className="padding-x py-12  lg:pt-[143px] lg:pb-[122px] bg-primary-light/20">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[97px]">
-        <div className="relative h-[43vw] lg:h-[28vw] max-w-[595px] w-full md:flex-1  bg-amber-50">
+      <div className="container flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[97px]">
+        <div className="relative h-[43vw] lg:h-[28vw] max-h-[486px] max-w-[595px] w-full md:flex-1">
           <Image
             src={manWIthPackage}
             alt="man with package"
@@ -20,28 +20,36 @@ const DiscoverLogistics = () => {
               Process
             </p>
           </div>
-          <h2 className="mt-4 sub-heading max-md:text-center">Discover Our Logistics Services</h2>
+          <h2 className="mt-4 sub-heading max-md:text-center">
+            Discover Our Logistics Services
+          </h2>
 
-          <p className="text-base font-light leading-6 mt-2 text-neutral-700">
-            Showcase what your platform offers beyond just shipping.
+          <p className="text-base font-light leading-6 mt-2 text-neutral-700 text-center">
+            Showcase what your platform offers beyond{" "}
+            <br className="md:hidden" /> just shipping.
           </p>
 
           <ul className="mt-4 lg:mt-6 grid gap-x-4 lg:gap-x-12.75 gap-y-2 lg:gap-y-4 grid-cols-2 max-w-[407px]">
             <li className="text-base leading-5.5 flex gap-2 items-center">
-                <div className="size-2 bg-secondary" />
-                Express Delivery</li>
+              <div className="size-2 bg-secondary" />
+              Express Delivery
+            </li>
             <li className="text-base leading-5.5 flex gap-2 items-center">
-                <div className="size-2 bg-secondary" />
-                Bulk Cargo Handling</li>
+              <div className="size-2 bg-secondary" />
+              Bulk Cargo Handling
+            </li>
             <li className="text-base leading-5.5 flex gap-2 items-center">
-                <div className="size-2 bg-secondary" />
-                Door-to-Door Service</li>
+              <div className="size-2 bg-secondary" />
+              Door-to-Door Service
+            </li>
             <li className="text-base leading-5.5 flex gap-2 items-center">
-                <div className="size-2 bg-secondary" />
-                Customs Clearance</li>
+              <div className="size-2 bg-secondary" />
+              Customs Clearance
+            </li>
             <li className="text-base leading-5.5 flex gap-2 items-center">
-                <div className="size-2 bg-secondary" />
-                Real-Time Tracking</li>
+              <div className="size-2 bg-secondary" />
+              Real-Time Tracking
+            </li>
           </ul>
         </div>
       </div>

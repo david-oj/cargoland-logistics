@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative h-[calc(100dvh-136px)] overflow-hidden">
-      <svg width="0" height="0" style={{ position: "absolute" }}>
+    <section className="relative h-[calc(100vh-80px)] md:h-[calc(100vh-136px)]  overflow-hidden">
+      {/* <svg width="0" height="0" style={{ position: "absolute" }}>
         <defs>
           <clipPath id="right-trapezoid" clipPathUnits="objectBoundingBox">
             <path
@@ -20,7 +20,7 @@ const Hero = () => {
             />
           </clipPath>
         </defs>
-      </svg>
+      </svg> */}
 
       <div className="absolute inset-0 -z-1 overflow-hidden">
         <Image
@@ -30,8 +30,10 @@ const Hero = () => {
           fill
         />
       </div>
+      {/* Background Trapezoid */}
+      <div className="absolute inset-0 hero-trapezoid h-full w-[100%] md:w-[80%] lg:w-[60%] bg-primary/78  transition-[clip-path] duration-500 ease-in-out " />
 
-      <div className="h-full w-[100%] md:w-[80%] lg:w-[60%] bg-primary/78 hero-trapezoid transition-[clip-path] duration-500 ease-in-out flex flex-col justify-center pl-6 sm:pl-14 lg:pl-[97px]  overflow-hidden">
+      <div className="container relative h-full flex flex-col justify-center pl-6 sm:pl-14 lg:pl-[97px] 2xl:pl-0  overflow-hidden">
         <h1 className="text-[28px] md:text-[32px] lg:text-[60px] leading-8.5 md:leading-10 lg:leading-18 font-bold text-white">
           Fast <br className="lg:hidden" /> & Reliable <br /> Global Shipping
         </h1>
@@ -66,7 +68,7 @@ const Hero = () => {
             <input
               type="text"
               placeholder="Enter your tracking number"
-              className="w-full h-full py-4 px-6 pr-30 bg-neutral-100 placeholder:text-neutral-500 rounded-lg"
+              className="w-full h-full py-4 px-6 pr-30 bg-neutral-50 placeholder:text-neutral-500 rounded-lg"
             />
             <button className="absolute top-1/2 transform -translate-y-1/2 right-1 active:scale-95 transition duration-300 bg-primary rounded-lg text-white flex items-center justify-center gap-2 w-[106px] h-[calc(100%-8px)]">
               <span className="text-base leaing-6">Track</span>

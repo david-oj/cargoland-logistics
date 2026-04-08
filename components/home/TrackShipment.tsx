@@ -1,16 +1,15 @@
 import { ArrowRight } from "lucide-react";
-import { Button } from "../ui/button";
 import Image from "next/image";
 import { heroImg } from "@/assets/images";
 
 const TrackShipment = () => {
   return (
     <section className="padding-x py-12 bg-primary">
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-[51px]">
+      <div className="container flex flex-col-reverse md:flex-row justify-center items-center gap-[51px]">
         <div className="text-white flex-1">
           <h2 className="sub-heading">Track Your Shipment in Real Time</h2>
-          <p className="text-base font-light leading-6 mt-2 text-white">
-            Enter your tracking ID to monitor shipment progress from pickup to
+          <p className="text-base font-light leading-6 mt-2 text-white text-center">
+            Enter your tracking ID to monitor shipment <br className="md:hidden" /> progress from pickup to
             delivery.
           </p>
 
@@ -18,7 +17,7 @@ const TrackShipment = () => {
             <input
               type="text"
               placeholder="Enter your tracking number"
-              className="w-full h-full py-4 px-6 pr-30 bg-neutral-100 text-black placeholder:text-neutral-500 rounded-lg"
+              className="w-full h-full py-4 px-6 pr-30 bg-neutral-50 text-black placeholder:text-neutral-500 rounded-lg"
             />
             <button className="absolute top-1/2 transform -translate-y-1/2 right-1 active:scale-95 transition duration-300 bg-primary rounded-lg text-white flex items-center justify-center gap-2 w-[106px] h-[calc(100%-8px)]">
               <span className="text-base leaing-6">Track</span>
@@ -27,7 +26,7 @@ const TrackShipment = () => {
           </div>
         </div>
 
-        <div className="relative h-[43vw] lg:h-[20.1vw] max-w-[492px] w-full md:flex-1 bg-amber-50 shrink-0">
+        <div className="relative h-[43vw] lg:h-[20.1vw] max-h-[343px] max-w-[492px] w-full md:flex-1 bg-amber-50 shrink-0">
           <Image
             src={heroImg}
             alt="woman with package"

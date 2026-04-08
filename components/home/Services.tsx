@@ -31,7 +31,7 @@ const services = [
 const Services = () => {
   return (
     <section className="py-12 md:py-[64px] lg:py-[103px] padding-x">
-      <div className="flex flex-col items-center">
+      <div className="container flex flex-col items-center">
         <div className="rounded-full py-2 px-3 bg-neutral-300">
           <p className="text-xs text-secondary font-medium leading-4.5">
             Our Service Overview
