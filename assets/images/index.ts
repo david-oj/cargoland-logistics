@@ -1,5 +1,6 @@
 import cargolandLogo from "./cargoland-logo.png";
-import hero from "./hero-image.jpg";
+import heroImg from "./hero-image.jpg";
 import manWIthPackage from "./man-with-package.jpg";
+import worldMap from "./world-map.png"
 
-export { cargolandLogo, hero, manWIthPackage };
+export { cargolandLogo, heroImg, manWIthPackage, worldMap };
