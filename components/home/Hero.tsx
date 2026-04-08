@@ -1,4 +1,4 @@
-import { hero } from "@/assets/images";
+import { heroImg } from "@/assets/images";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
@@ -24,7 +24,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 -z-1 overflow-hidden">
         <Image
-          src={hero}
+          src={heroImg}
           alt="Cargoland Logistics Logo"
           className="size-full object-cover md:object-[100px] lg:object-[352px] "
           fill
@@ -66,7 +66,7 @@ const Hero = () => {
             <input
               type="text"
               placeholder="Enter your tracking number"
-              className="w-full h-full py-4 px-6 pr-30 bg-neutral-100 placeholder:text-neutral-500"
+              className="w-full h-full py-4 px-6 pr-30 bg-neutral-100 placeholder:text-neutral-500 rounded-lg"
             />
             <Button className="absolute top-1/2 transform -translate-y-1/2 right-1 gap-2 w-[106px] h-[calc(100%-8px)]">
               <span className="text-base leaing-6">Track</span>

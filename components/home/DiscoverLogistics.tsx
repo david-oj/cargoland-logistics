@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const DiscoverLogistics = () => {
   return (
-    <section className="padding-x py-16  lg:pt-[143px] lg:pb-[122px] bg-primary-light/20">
+    <section className="padding-x py-12  lg:pt-[143px] lg:pb-[122px] bg-primary-light/20">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[97px]">
         <div className="relative h-[43vw] lg:h-[28vw] max-w-[595px] w-full md:flex-1  bg-amber-50">
           <Image

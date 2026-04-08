@@ -27,21 +27,21 @@ const HowItWorks = () => {
     <section className="relative bg-white">
       {/* Dark primary background color  */}
       <div className="absolute h-[465px] w-full bg-primary-dark" />
-      <div className="padding-x pt-[90px]  relative z-5 pb-10 flex flex-col items-center text-white">
+      <div className="padding-x pt-12 md:pt-[90px] relative z-5 flex flex-col items-center text-white">
         <div className="rounded-full py-2 px-3 bg-primary/40">
           <p className="text-xs font-medium leading-4.5">Process</p>
         </div>
 
-        <h2 className="mt-4 sub-heading">
+        <h2 className="mt-2 md:mt-4 sub-heading">
           How It Works
         </h2>
 
-        <p className="text-base leading-6 mt-3">
+        <p className="text-base leading-6 mt-1 md:mt-3 text-center">
           Get your shipment booked and tracked in four simple steps.
         </p>
       </div>
 
-      <div className="padding-x pb-8 md:pb-12 relative z-5">
+      <div className="padding-x pt-6 md:pt-10 pb-8 md:pb-12 relative z-5">
         <div className="p-6 md:py-14.5 md:px-[45px] grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-[24px] bg-white ">
           {howItWorks.map((step, idx) => (
             <div
