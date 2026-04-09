@@ -1,3 +1,5 @@
+import AcrossAfrica from "@/components/home/AcrossAfrica";
+import TrackShipment from "@/components/home/TrackShipment";
 import ContactHeading from "@/components/layout/ContactHeading";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -12,6 +14,8 @@ export default function HomeLayout({
       <ContactHeading />
       <Header />
       {children}
+      <TrackShipment />
+      <AcrossAfrica />
       <Footer />
     </main>
   );

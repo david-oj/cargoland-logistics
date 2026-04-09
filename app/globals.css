@@ -177,7 +177,7 @@
   }
 
   .sub-heading {
-    @apply text-2xl md:text-[40px] font-semibold md:leading-12 text-center
+    @apply text-2xl md:text-[40px] font-semibold md:leading-12 max-md:text-center
   }
 
   .semi-circle {

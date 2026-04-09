@@ -24,7 +24,7 @@ const DiscoverLogistics = () => {
             Discover Our Logistics Services
           </h2>
 
-          <p className="text-base font-light leading-6 mt-2 text-neutral-700 text-center">
+          <p className="text-base font-light leading-6 mt-2 text-neutral-700 max-md:text-center">
             Showcase what your platform offers beyond{" "}
             <br className="md:hidden" /> just shipping.
           </p>

@@ -16,29 +16,32 @@ const Header = () => {
   return (
     <header className="py-2 md:py-4 padding-x bg-white">
       <div className="container flex items-center justify-between">
-        <div className="relative w-28 md:w-35.25 h-10 md:h-12 shrink-0">
+        <Link
+          href="/"
+          className="relative w-28 md:w-35.25 h-10 md:h-12 shrink-0"
+        >
           <Image
             src={cargolandLogo.src}
             alt="Cargoland Logo"
             className="size-full object-cover"
             fill
           />
-        </div>
+        </Link>
 
         <nav className="max-md:hidden">
           <ul className="flex gap-6 lg:gap-10.5">
             <li className="text-sm leading-5 flex items-center gap-1.5">
-              <Link href="">Services</Link>
+              <Link href="#">Services</Link>
               <Icon icon={arrowDown2} />
             </li>
             <li className="text-sm leading-5">
-              <Link href="">Tracking</Link>
+              <Link href="#">Tracking</Link>
             </li>
             <li className="text-sm leading-5">
-              <Link href="">How It Works</Link>
+              <Link href="#">How It Works</Link>
             </li>
             <li className="text-sm leading-5">
-              <Link href="">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -57,17 +60,17 @@ const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="p-2">
               <DropdownMenuItem className="text-sm leading-5 flex items-center justify-between">
-                <Link href="">Services</Link>
+                <Link href="#">Services</Link>
                 <Icon icon={arrowDown2} />
               </DropdownMenuItem>
               <DropdownMenuItem className="text-sm leading-5">
-                <Link href="">Tracking</Link>
+                <Link href="#">Tracking</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-sm leading-5">
-                <Link href="">How It Works</Link>
+                <Link href="#">How It Works</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-sm leading-5">
-                <Link href="">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

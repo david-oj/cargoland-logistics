@@ -8,7 +8,7 @@ const TrackShipment = () => {
       <div className="container flex flex-col-reverse md:flex-row justify-center items-center gap-[51px]">
         <div className="text-white flex-1">
           <h2 className="sub-heading">Track Your Shipment in Real Time</h2>
-          <p className="text-base font-light leading-6 mt-2 text-white text-center">
+          <p className="text-base font-light leading-6 mt-2 text-white max-md:text-center">
             Enter your tracking ID to monitor shipment <br className="md:hidden" /> progress from pickup to
             delivery.
           </p>
@@ -26,7 +26,7 @@ const TrackShipment = () => {
           </div>
         </div>
 
-        <div className="relative h-[43vw] lg:h-[20.1vw] max-h-[343px] max-w-[492px] w-full md:flex-1 bg-amber-50 shrink-0">
+        <div className="relative h-[43vw] lg:h-[20.1vw] max-h-[343px] max-w-[492px] w-full md:flex-1 shrink-0">
           <Image
             src={heroImg}
             alt="woman with package"
