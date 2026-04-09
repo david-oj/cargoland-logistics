@@ -55,10 +55,10 @@ const HelpCenter = () => {
                 className="border-b-0!"
                 key={idx}
               >
-                <AccordionTrigger className="font-bold text-xl md:text-2xl leading-8 p-0">
+                <AccordionTrigger className="font-bold text-lg md:text-xl md:text-2xl leading-8 p-0">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-base font-light leading-6 pt-4">
+                <AccordionContent className="text-base font-light leading-6 pt-2 sm:pt-4">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
