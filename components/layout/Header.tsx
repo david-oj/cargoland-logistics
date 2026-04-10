@@ -31,14 +31,14 @@ const Header = () => {
         <nav className="max-md:hidden">
           <ul className="flex gap-6 lg:gap-10.5">
             <li className="text-sm leading-5 flex items-center gap-1.5">
-              <Link href="#">Services</Link>
+              <Link href="#services">Services</Link>
               <Icon icon={arrowDown2} />
             </li>
             <li className="text-sm leading-5">
-              <Link href="#">Tracking</Link>
+              <Link href="#tracking">Tracking</Link>
             </li>
             <li className="text-sm leading-5">
-              <Link href="#">How It Works</Link>
+              <Link href="#how-it-works">How It Works</Link>
             </li>
             <li className="text-sm leading-5">
               <Link href="/contact">Contact</Link>
@@ -60,14 +60,14 @@ const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="p-2">
               <DropdownMenuItem className="text-sm leading-5 flex items-center justify-between">
-                <Link href="#">Services</Link>
+                <Link href="#services">Services</Link>
                 <Icon icon={arrowDown2} />
               </DropdownMenuItem>
               <DropdownMenuItem className="text-sm leading-5">
-                <Link href="#">Tracking</Link>
+                <Link href="#tracking">Tracking</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-sm leading-5">
-                <Link href="#">How It Works</Link>
+                <Link href="#how-it-works">How It Works</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-sm leading-5">
                 <Link href="/contact">Contact</Link>

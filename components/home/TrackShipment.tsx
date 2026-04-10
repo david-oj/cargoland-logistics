@@ -4,7 +4,7 @@ import { heroImg } from "@/assets/images";
 
 const TrackShipment = () => {
   return (
-    <section className="padding-x py-12 bg-primary">
+    <section id="tracking" className="padding-x py-12 bg-primary">
       <div className="container flex flex-col-reverse md:flex-row justify-center items-center gap-[51px]">
         <div className="text-white flex-1">
           <h2 className="sub-heading">Track Your Shipment in Real Time</h2>

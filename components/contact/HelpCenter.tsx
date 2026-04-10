@@ -58,7 +58,7 @@ const HelpCenter = () => {
                 <AccordionTrigger className="font-bold text-lg md:text-xl md:text-2xl leading-8 p-0">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-base font-light leading-6 pt-2 sm:pt-4">
+                <AccordionContent className="text-base font-light leading-6 pt-2 sm:pt-4 text-neutral-400 ">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -71,9 +71,9 @@ const HelpCenter = () => {
           ))}
         </Accordion>
 
-        <Button variant="link" className="text-lg leading-7 mt-8 p-0 h-fit">
+        <button  className="text-lg leading-7 mt-8 p-0 text-primary hover:underline">
           Read More
-        </Button>
+        </button>
       </div>
     </section>
   );

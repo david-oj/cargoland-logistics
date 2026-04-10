@@ -24,7 +24,7 @@ const howItWorks = [
 
 const HowItWorks = () => {
   return (
-    <section className="relative bg-white">
+    <section id="how-it-works" className="relative bg-white">
       {/* Dark primary background color  */}
       <div className="absolute h-[465px] w-full bg-primary-dark" />
       <div className="container">
