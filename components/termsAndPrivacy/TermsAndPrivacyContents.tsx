@@ -94,14 +94,14 @@ const terms = [
 const TermsAndPrivacyContents = () => {
   return (
     <section className="py-12 md:py-[64px] lg:py-[78px] px-4 sm:px-14 lg:px-[152px]">
-      <div className="space-y-4">
+      <div className="space-y-6 md:space-y-4">
         {terms.map((term, idx) => (
           <div className="" key={idx}>
-            <h2 className="text-2xl leading-8">{term.title}</h2>
+            <h2 className="text-xl md:text-2xl leading-8">{term.title}</h2>
 
-            <div className="mt-4.5 space-y-8">
+            <div className="mt-4 md:mt-4.5 space-y-4 md:space-y-8">
               {term.body.map((p, idx) => (
-                <p className="text-lg leading-6.75 text-justify " key={idx}>
+                <p className="text-base md:text-lg leading-6.75 text-neutral-600 text-justify " key={idx}>
                   {p}
                 </p>
               ))}
