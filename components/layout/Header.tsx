@@ -1,10 +1,12 @@
+"use client";
+
 import { arrowDown2 } from "@/assets/icons";
 import { cargolandLogo } from "@/assets/images";
 import { Icon } from "@iconify/react";
-import { Menu, MenuSquare, UserCircleIcon } from "lucide-react";
+import { Menu, UserCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,14 +33,14 @@ const Header = () => {
         <nav className="max-md:hidden">
           <ul className="flex gap-6 lg:gap-10.5">
             <li className="text-sm leading-5 flex items-center gap-1.5">
-              <Link href="#services">Services</Link>
+              <Link href="/#services">Services</Link>
               <Icon icon={arrowDown2} />
             </li>
             <li className="text-sm leading-5">
-              <Link href="#tracking">Tracking</Link>
+              <Link href="/#tracking">Tracking</Link>
             </li>
             <li className="text-sm leading-5">
-              <Link href="#how-it-works">How It Works</Link>
+              <Link href="/#how-it-works">How It Works</Link>
             </li>
             <li className="text-sm leading-5">
               <Link href="/contact">Contact</Link>
@@ -53,23 +55,32 @@ const Header = () => {
           </div>
 
           <DropdownMenu>
-            <DropdownMenuTrigger asChild className="md:hidden">
+            <DropdownMenuTrigger className="md:hidden">
               <button className="p-0">
                 <Menu className="text-secondary w-8" />
               </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="p-2">
-              <DropdownMenuItem className="text-sm leading-5 flex items-center justify-between">
-                <Link href="#services">Services</Link>
-                <Icon icon={arrowDown2} />
+            <DropdownMenuContent
+              onCloseAutoFocus={(e) => e.preventDefault()}
+              align="end"
+              className="p-2"
+            >
+              <DropdownMenuItem asChild>
+                <Link
+                  href="/#services"
+                  className="text-sm w-full leading-5 flex items-center justify-between"
+                >
+                  Services
+                  <Icon icon={arrowDown2} />
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-sm leading-5">
-                <Link href="#tracking">Tracking</Link>
+              <DropdownMenuItem asChild className="text-sm leading-5">
+                <Link href="/#tracking">Tracking</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-sm leading-5">
-                <Link href="#how-it-works">How It Works</Link>
+              <DropdownMenuItem asChild className="text-sm leading-5">
+                <Link href="/#how-it-works">How It Works</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-sm leading-5">
+              <DropdownMenuItem asChild className="text-sm leading-5">
                 <Link href="/contact">Contact</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
