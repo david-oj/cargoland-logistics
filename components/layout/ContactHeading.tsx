@@ -10,12 +10,12 @@ const ContactHeading = () => {
           <div className="flex">
             <Icon icon={mail} className="size-4 mr-px" />
             <p className="text-xs font-medium leading-4.5">
-              Support@cargoland.com
+              info@cargoland.africa
             </p>
           </div>
           <div className="flex">
             <Icon icon={mail} className="size-4 mr-px" />
-            <p className="text-xs font-medium leading-4.5">+(204)323-2345</p>
+            <p className="text-xs font-medium leading-4.5">+2348127631001</p>
           </div>
         </div>
 
