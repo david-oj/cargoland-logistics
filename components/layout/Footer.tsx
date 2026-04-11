@@ -91,18 +91,15 @@ const Footer = () => {
         <div className="mx-6 lg:ml-[86px] lg:mr-[101px] flex justify-between gap-2 mt-6 md:mt-8.5">
           <p className="text-xs text-white/70 leading-4.5 max-w-[402px]">
             <span className="font-semibold text-white/80">Address 1:-</span>
-            303B Sahco Business Complex Cargo Terminal MMIA (Muritala Muhammad
-            International Airport) Lagos Nigeria (HQ)
+            303B Sahco business complex cargo terminal MMIA(Muritala Muhammed  International Airport) lagos Nigeria (HQ)
           </p>
           <p className="text-xs text-white/70 leading-4.5 max-w-[402px]">
             <span className="font-semibold text-white/80">Address 2:-</span>
-            303B Sahco Business Complex Cargo Terminal MMIA (Muritala Muhammad
-            International Airport) Lagos Nigeria (HQ)
+            Warehouse office 185 akowonjo road shobo bus stop lagos Nigeria
           </p>
           <p className="text-xs text-white/70 leading-4.5 max-w-[402px]">
             <span className="font-semibold text-white/80">Address 3:-</span>
-            303B Sahco Business Complex Cargo Terminal MMIA (Muritala Muhammad
-            International Airport) Lagos Nigeria (HQ)
+            Adajudge road river state, porthacourt
           </p>
         </div>
 
