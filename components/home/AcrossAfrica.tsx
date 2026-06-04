@@ -23,6 +23,7 @@ const AcrossAfrica = () => {
 
         <div className="mt-8 md:mt-9 md:padding-x flex flex-col items-center justify-center">
           <div className="relative h-[305px] w-full max-w-[782px]">
+            {/* semi-circle overlay */}
             <div className="absolute left-1/2 h-80 xs:h-100 sm:h-100  w-[140%]  sm:w-[110vw] md:w-full  transform -translate-x-1/2 semi-circle bg-primary-light rounded-fullmx-auto" />
             <Image
               src={worldMap}

@@ -3,7 +3,7 @@
 import { arrowDown2 } from "@/assets/icons";
 import { cargolandLogo } from "@/assets/images";
 import { Icon } from "@iconify/react";
-import { Menu, UserCircleIcon } from "lucide-react";
+import { Menu, UserCircleIcon, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -55,9 +55,10 @@ const Header = () => {
           </div>
 
           <DropdownMenu>
-            <DropdownMenuTrigger className="md:hidden">
+            <DropdownMenuTrigger asChild className="md:hidden">
               <button className="p-0">
-                <Menu className="text-secondary w-8" />
+                 <Menu className="hover:cursor-pointer block group-data-[state=open]:hidden" />
+                <X className="hover:cursor-pointer hidden group-data-[state=open]:block" />
               </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent

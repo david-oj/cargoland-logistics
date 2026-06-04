@@ -2,8 +2,6 @@ import DiscoverLogistics from "@/components/home/DiscoverLogistics";
 import Hero from "@/components/layout/Hero";
 import HowItWorks from "@/components/home/HowItWorks";
 import Services from "@/components/home/Services";
-import TrackShipment from "@/components/home/TrackShipment";
-import AcrossAfrica from "@/components/home/AcrossAfrica";
 
 export default function Home() {
   return (
