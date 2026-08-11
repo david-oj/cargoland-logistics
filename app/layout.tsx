@@ -85,20 +85,20 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.cargoland.africa/",
-    languages: {
-      "en-NG": "https://www.cargoland.africa/",
-      "en-US": "https://www.cargoland.africa/",
-      fr: "https://www.cargoland.africa/",
+    // languages: {
+    //   "en-NG": "https://www.cargoland.africa/",
+    //   "en-US": "https://www.cargoland.africa/",
+    //   fr: "https://www.cargoland.africa/",
     },
   },
-  category: "logistics",
-  classification: "Freight and Logistics Services",
-  referrer: "origin-when-cross-origin",
+  // category: "logistics",
+  // classification: "Freight and Logistics Services",
+  // referrer: "origin-when-cross-origin",
   manifest: "/manifest.json",
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-  },
+  // verification: {
+  //   google: "your-google-verification-code",
+  //   yandex: "your-yandex-verification-code",
+  // },
   other: {
     "geo.region": "NG-LA",
     "geo.placename": "Lagos",
